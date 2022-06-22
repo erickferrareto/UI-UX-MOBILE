@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Banco de dados SQLite</string>
+    <string name="app_name">Simulador</string>
+    <string name="txt_simulate">botao de simulação de partidas</string>
 </resources>
