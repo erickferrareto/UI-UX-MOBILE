@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_default">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageFirst"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/cd_home_team"
+            />
+        <TextView
+            android:id="@+id/txtHomeTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageFirst"
+            app:layout_constraintStart_toStartOf="@id/imageFirst"
+            app:layout_constraintTop_toBottomOf="@+id/imageFirst" />
+        <TextView
+            android:id="@+id/txtTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@id/imageFirst"
+            app:layout_constraintStart_toEndOf="@id/imageFirst"
+            app:layout_constraintTop_toTopOf="@id/imageFirst" />
+        <TextView
+            android:id="@+id/versus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_Versus"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageFirst"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageFirst" />
+        <ImageView
+            android:id="@+id/imageSecond"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_margin="@dimen/margin_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/cd_vist_team"
+            />
+        <TextView
+            android:id="@+id/txtVisitScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@id/imageSecond"
+            app:layout_constraintEnd_toStartOf="@id/imageSecond"
+            app:layout_constraintTop_toTopOf="@id/imageSecond" />
+        <TextView
+            android:id="@+id/txtVisitTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/imageSecond"
+            app:layout_constraintEnd_toEndOf="@id/imageSecond"
+            app:layout_constraintTop_toBottomOf="@id/imageSecond"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/margin_default"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

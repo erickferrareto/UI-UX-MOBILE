@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         biding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(biding.root)
-        biding.TXThello.text = "hi Erick"
+
 
     }
 }
