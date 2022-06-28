@@ -1,4 +1,4 @@
-package com.example.bancodedadossqlite
+package com.example.bancodedadossqlite.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,5 +16,10 @@ class DetailActivity : AppCompatActivity() {
         setContentView(biding.root)
         setSupportActionBar(biding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+
     }
+
+
 }
